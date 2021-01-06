@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="601.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="148.0" prefWidth="600.0" text="LOGIN">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="RIGHT" prefHeight="46.0" prefWidth="605.0" text=" Username:">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <TextField fx:id="textFieldUserName" alignment="TOP_LEFT" cache="true" editable="false" prefHeight="45.0" prefWidth="455.0" style="-fx-background-color: A9A9A9;" text="sav">
+               <font>
+                  <Font size="20.0" />
+               </font></TextField>
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" prefHeight="46.0" prefWidth="615.0" text=" Password: " wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <TextField fx:id="textFieldPassword" accessibleRole="PASSWORD_FIELD" prefHeight="45.0" prefWidth="456.0" style="-fx-background-color: A9A9A9;" text="soda">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+         </graphic>
+      </Label>
+      <Label fx:id="label" contentDisplay="RIGHT" layoutX="10.0" layoutY="188.0" prefHeight="46.0" prefWidth="605.0" text=" Password must contain at least 6 letters" textFill="RED" />
+      <HBox accessibleRole="TOOL_BAR" alignment="BASELINE_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="68.0" prefWidth="604.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="buttonLogin" alignment="BOTTOM_RIGHT" defaultButton="true" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="100.0" text="Login" HBox.hgrow="ALWAYS">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Button>
+            <FlowPane prefHeight="54.0" prefWidth="73.0" />
+            <Button fx:id="buttonCancel" alignment="BOTTOM_CENTER" cancelButton="true" layoutX="517.0" layoutY="10.0" mnemonicParsing="false" onAction="#cancel" prefHeight="40.0" prefWidth="100.0" text="Cancel">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <FlowPane prefHeight="54.0" prefWidth="307.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
