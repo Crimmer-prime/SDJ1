@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="360.0" prefWidth="547.0" userData="View 2 Window Title" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainWindowController">
+   <children>
+      <Label layoutX="224.0" layoutY="14.0" text="List of DataObjects" />
+      <Button layoutX="56.0" layoutY="298.0" mnemonicParsing="false" onAction="#createNew" text="Create New" />
+      <Button layoutX="395.0" layoutY="298.0" mnemonicParsing="false" onAction="#editSelected" text="Edit Selected" />
+      <TableView fx:id="dataObjectTableView" layoutX="174.0" layoutY="47.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="221.0" layoutY="298.0" mnemonicParsing="false" onAction="#save" text="Save To MXL File" />
+   </children>
+</AnchorPane>
